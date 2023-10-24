@@ -1,0 +1,78 @@
+Associer touche / son :
+
+Fonction _toucheD
+if butn(toucheD) est pressé : do un son
+if (btn(➡️)) sfx(0)
+
+Fonction _toucheG
+if butn(toucheG) est pressé : do un son
+if (btn(⬅️)) sfx(1)
+
+Fonction _toucheH
+if butn(toucheH) est pressé : do un son
+if (btn(⬆️)) sfx(2)
+
+Fonction _toucheB
+if butn(toucheB) est pressé : do un son
+if (btn(⬇️)) sfx(3)
+
+
+DEPLACEMENTS
+
+Déplacements avancer/reculer :
+	if (btn(x)) x+=1
+	if (btn(v)) x-=1
+
+
+
+Gérer les fonctions déplacements
+
+Fonction _actionmonter()
+programmer déplacement perso sur les marches
+
+coordonnées perso y-=1
+jusqu'à ce que flag "stop"
+
+
+Fonction _actiondescendre()
+programmer déplacement perso sur les marches
+
+coordonnées perso y+=1
+jusqu'à ce que flag "stop"
+
+
+fonction obstacle()
+quand on passe sur le flag obstacle 1 
+on change de sprite perso
+boîte de dialogue "On s'arrête ? Que dois-je faire ?"
+
+function draw_msg()
+	print(messages[1],0,60,7)
+end
+7 : gère la couleur
+
+
+Gérer les fonctions signal d'action
+
+Fonction _signalmonter ()
+if _toucheD, _toucheG, _toucheH : do action monter
+else    afficher message erreur
+	recommencer
+
+Fonction _signaldescendre ()
+if _toucheD, _toucheG, _toucheH : do action descendre
+else    afficher message erreur
+	recommencer
+
+SPRITES et FLAGS
+Flag sol (0) : on ne peut pas traverser
+Flag obstacle (1)
+
+BONUS
+
+
+
+
+
+
+
