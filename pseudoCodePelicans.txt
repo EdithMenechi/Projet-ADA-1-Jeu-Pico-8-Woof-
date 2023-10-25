@@ -16,6 +16,8 @@ Fonction _toucheB
 if butn(toucheB) est pressé : do un son
 if (btn(⬇️)) sfx(3)
 
+Reprendre le son du tuto 1 Edith :D :D
+
 
 DEPLACEMENTS
 
@@ -52,6 +54,10 @@ end
 7 : gère la couleur
 
 
+Fonction didacticiel()
+if case = x,y (1er escalier) : ouverture boîte de dialogue explicative
+
+
 Gérer les fonctions signal d'action
 
 Fonction _signalmonter ()
@@ -64,9 +70,18 @@ if _toucheD, _toucheG, _toucheH : do action descendre
 else    afficher message erreur
 	recommencer
 
+if not _toucheD then msg d'erreur (print message)
+else if not _toucheG then msg d'erreur
+else if not _toucheH then msg d'erreur
+else fonction _descendre
+
+
 SPRITES et FLAGS
 Flag sol (0) : on ne peut pas traverser
-Flag obstacle (1)
+Flag obstacle (1) : déclenche msg "on s'arrête, que dois-je faire"
+Flag didacticiel (2) : déclenche msg avec consignes "médor souviens toi pour descendre il faut faire..."
+
+GERER CAMERA (gros morceau !!! ou pas :D)
 
 BONUS
 
