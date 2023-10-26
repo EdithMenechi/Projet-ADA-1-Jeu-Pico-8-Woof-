@@ -12,15 +12,14 @@ function _update()
 	if not messages[1] then
 		player_movement()
 	end
-	woof1()
-	woof2()
---	woof3()
+	woof()
+	var()
 	down()
 	up()
 	obstacle()
 	didacticiel()
 	update_msg()
-	var()
+	update_camera()
 end
 
 function _draw()
@@ -31,6 +30,8 @@ function _draw()
 	draw_var()
 end
 -->8
+-- map et camera
+
 -- map
 
 function draw_map()
@@ -42,8 +43,19 @@ function check_flag(flag,x,y)
 	return fget(sprite,flag)
 end
 
--->8
 
+-- camera
+
+function update_camera()
+ camx=mid(0,p.x-7.5,31-15)
+ camy=mid(0,p.y-7.5,31-15)
+ camera(camx*8,camy*8)
+end
+
+-- mid(... 31-15)
+--31:taille max de la carte
+--mettre un y fixe
+-->8
 -- player + woof
 
 function create_player()
@@ -70,14 +82,12 @@ end
 
 -- commandes sons
 
-function woof1()
-	if (btn(⬆️)) sfx(0) end
-	
-function woof2()	
- if (btn(⬇️)) sfx(1) end
-
---function woof3()
--- if (btn(➡️)) sfx(2) end
+function woof()
+ if (btnp(⬅️)) sfx(0) 
+ if (btnp(⬆️)) sfx(1)
+ if (btnp(⬇️)) sfx(2)
+ if (btnp(➡️)) sfx(3)
+end
 
 -- !regler les commandes
 -- haut bas : sons, dg bouger
