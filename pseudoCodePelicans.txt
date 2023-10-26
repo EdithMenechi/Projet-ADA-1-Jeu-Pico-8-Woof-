@@ -89,5 +89,38 @@ BONUS
 
 
 
+tableau comparer etape par etape (changement lettre en chiffre)
+
+fonction verification
+if note = 1bcd, ok
+ sinon erreur
+si ok, tape la touche suivant, et if note = 12cd, ok
+ sinon erreur
+si ok, tape la touche suivant, et if note = 123d, ok
+ sinon erreur
+
+
+
+verif1 = verifie le 1° chiffre : 1BCD
+ si ok
+ verif2 = vérifie le 2° chiffre : 12cd
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
