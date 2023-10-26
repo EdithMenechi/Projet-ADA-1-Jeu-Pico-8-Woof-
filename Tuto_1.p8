@@ -19,7 +19,6 @@ function _update()
 	--up()
 	drapeau()
 	update_msg()
- verif()
 	--update_camera()
 end
 
@@ -84,28 +83,30 @@ a="a"
 b="b"
 c="c"
 d="d"
+air=""
 
 function var()
- if (btnp(⬅️)) and notes=="abcd"
-	then a=1 
- elseif (btnp(⬆️)) and notes=="1bcd"
- then b=2 
- elseif (btnp(⬇️)) and notes=="12cd"
- then c=3 
- elseif (btnp(➡️)) and notes=="123d"
- then d=4 else notes="abcd" end
- notes=a..b..c..d
+ if (btnp(⬅️)) then air=air.."a" end
+ if (btnp(⬆️)) then air=air.."b" end
+ if (btnp(⬇️)) then air=air.."c" end
+ if (btnp(➡️)) then air=air.."d" end
 end 
 
 
 function draw_var()
- print(notes,10,2,7)
-end
-
-function verif()
- if notes=="1234" then print("youhou",10,2,7)
+ print(air,10,2,7)
+ 
+ if (air == "bca") 
+ then
+   print("super",10,10,7)
+   air=""
  end
 end
+
+--manque "revient a zero si faux"
+
+
+
 
 
 
