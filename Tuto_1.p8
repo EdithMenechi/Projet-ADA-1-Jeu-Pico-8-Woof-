@@ -20,6 +20,8 @@ function _update()
 	drapeau()
 	update_msg()
 	--update_camera()
+--	clear()
+	
 end
 
 function _draw()
@@ -77,7 +79,7 @@ end
 --jeu aventure 2, 11:50
 
 -->8
---fonctions monter/descendre
+ --fonctions monter/descendre
 
 a="a"
 b="b"
@@ -93,17 +95,29 @@ function var()
 end 
 
 
-function draw_var()
- print(air,10,2,7)
+
+--function clear()
+ --if not (air == sub("bca",0,#air))
+ --then air=""
+ --end
+--end
+
  
- if (air == "bca") 
+
+function draw_var()
+ print(air,10,2,7) 
+ if (air == "bca")
  then
    print("super",10,10,7)
-   air=""
+  end if not (air == sub("bca",0,#air))
+  then air="", create_msg("0","bin non")
  end
 end
 
+
 --manque "revient a zero si faux"
+--utiliser sub
+--changer les conditions if not
 
 
 
