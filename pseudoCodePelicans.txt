@@ -65,6 +65,15 @@ if _toucheD, _toucheG, _toucheH : do action monter
 else    afficher message erreur
 	recommencer
 
+si appuyer sur le bouton du haut est vrai
+alors on peut passer à l'étape suivante	
+sinon message d'erreur
+si appuyer sur le bouton de droite est vrai
+alors on peut passer à l'étape suivante
+sinon message d'erreur
+si appuyer sur le bouton du bas est vrai
+alors le personnage monte
+
 Fonction _signaldescendre ()
 if _toucheD, _toucheG, _toucheH : do action descendre
 else    afficher message erreur
@@ -76,47 +85,18 @@ else if not _toucheH then msg d'erreur
 else fonction _descendre
 
 
+si flag 0 alors on
+
+
 SPRITES et FLAGS
 Flag sol (0) : on ne peut pas traverser
 Flag obstacle (1) : déclenche msg "on s'arrête, que dois-je faire"
 Flag didacticiel (2) : déclenche msg avec consignes "médor souviens toi pour descendre il faut faire..."
 
-GERER CAMERA (gros morceau !!! ou pas :D)
+
+
 
 BONUS
-
-
-
-
-
-tableau comparer etape par etape (changement lettre en chiffre)
-
-fonction verification
-if note = 1bcd, ok
- sinon erreur
-si ok, tape la touche suivant, et if note = 12cd, ok
- sinon erreur
-si ok, tape la touche suivant, et if note = 123d, ok
- sinon erreur
-
-
-
-verif1 = verifie le 1° chiffre : 1BCD
- si ok
- verif2 = vérifie le 2° chiffre : 12cd
- 
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

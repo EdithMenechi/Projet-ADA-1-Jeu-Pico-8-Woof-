@@ -1,1 +1,52 @@
+Brainstorming
+
+Un perso qui avance et recule
+Un aveugle guidé par un muet via des suites de sons
+
+Doit monter et descendre des marches. Il ne peut être guidé que par le son : des mélodies.
+Des suites de touches forment une mélodie.
+
+Il doit changer de métro.
+
+
+
+1°) Tester fonction suite de touche qui provoque l'action de monter
+2°) Ecrire les dialogues
+3°) Définir les sons associés aux touches
+4°) Créer le sprite du personnage
+(5°) Animer le sprite du personnage)
+6°) Définir les sprites du décor
+7°) Créer éléments déclencheurs des dialogues
+8°) Creuser notion de flag
+9°) Créer sons animations
+10°) Créer fond sonore
+11°) Gestion de la caméra
+12°) Gestion des déplacements du personnage : avancer et reculer sur 2 touches et 4 autres touches pour mélodies
+
+
+Dialogues :
+"Rouky, peux-tu me guider pour aller à Ada ? C'est mon premier jour !"
+
+"Je ne peux plus avancer, que dois-je faire ?"
+
+"Aboie en appuyant sur (<), puis sur (^), puis sur (>) pour me prévenir que je dois monter un escalier."
+
+"Aboie en appuyant sur (<), puis sur (^), puis sur (>) pour me prévenir que je dois descendre un escalier."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
