@@ -173,6 +173,7 @@ end
 
 air=""
 
+--chaines de caracteres descendre
 function var()
  if (btnp(⬅️))
   and not messages[1]
@@ -188,7 +189,10 @@ function var()
   then air=air.."d" end
 end 
 
-function descendre() 
+
+
+--executer l'action descendre 
+function descendre()
  if (air == "dcb")
   then
    down()
@@ -199,6 +203,8 @@ function descendre()
 	end
 end
 
+
+--fonction qui declare l'action de descendre
 function down()
 	repeat
 		newy+=1
