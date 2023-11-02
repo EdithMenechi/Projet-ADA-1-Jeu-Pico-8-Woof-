@@ -130,6 +130,7 @@ end
 
 
 --dialogue de fin
+
 function arrivee()
  if check_flag(5,p.x+1,newy)
  then create_msg("0","on y est,\nmerci babbage !")
@@ -159,10 +160,10 @@ end
 --aboiements
 
 function woof()
- if (btnp(⬅️)) sfx(0) 
- if (btnp(⬆️)) sfx(1)
- if (btnp(⬇️)) sfx(2)
- if (btnp(➡️)) sfx(3)
+ if (btnp(⬅️)) sfx(3) 
+ if (btnp(⬆️)) sfx(2)
+ if (btnp(⬇️)) sfx(1)
+ if (btnp(➡️)) sfx(0)
 end
 
 
